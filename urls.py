@@ -1,4 +1,5 @@
 from django.conf.urls.defaults import patterns, include, url
+from blog.views import index
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -14,5 +15,6 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
-    url(r'^blog/index/$','blog.views.index'),	
-)
+    # url(r'^blog/index/$','blog.views.index'),
+    url(r'^blog/index/$',index),
+)	
