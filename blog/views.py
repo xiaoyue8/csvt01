@@ -16,8 +16,8 @@ class Person(object):
     def say(self):
 	return "I'm"+self.name
 
-def index(req):
+def index(req,id):
     user = {'name':'tom','age':23,'sex':'male'}
     book_list = ['python','java','php','web']
 
-    return render_to_response('index.html',{'title':'my page','book_list':book_list,'user':user})
+    return render_to_response('index.html',{'title':'my page','book_list':book_list,'user':user,'id':id})

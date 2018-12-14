@@ -17,5 +17,6 @@ urlpatterns = patterns('blog.views',
     # url(r'^admin/', include(admin.site.urls)),
     # url(r'^blog/index/$','blog.views.index'),
     # url(r'^blog/index/$',index),
-    url(r'^blog/index/$','index'),
+    # url(r'^blog/index/$','index'),
+    url(r'^blog/index/(?P<id>\d{2})/$','index'),  
 )	
